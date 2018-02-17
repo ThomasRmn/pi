@@ -25,8 +25,9 @@
 
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Présentation</a></li>
-					<li><a href="classeur.html">Classeur</a></li>
+					<li><a href="index.html" class="external">Présentation</a></li>
+					<li><a href="#" class="current">Classeur</a></li>
+					<li><a href="recapitulatif.html" class="external">Fiche de projet</a></li>
 				</ul>
 			</nav>
 
@@ -50,7 +51,8 @@
 	<li><a href="#Analyse_structurelle_57">Analyse structurelle</a></li>
 	<li><a href="#Diagramme_FAST_61">Diagramme FAST</a></li>
 	<li><a href="#Modelisation_65">Modélisation</a></li>
-	<li><a href="#Experimentations_70">Expérimentations</a></li>
+	<li><a href="#Experimentations_70">Expérimentations</a></li> 
+	<li><a href="#Protocoles experimentaux_45">Protocoles expérimentaux</a></li> 
 	<li><a href="#Mesures_82">Mesures</a></li>
 	<li><a href="#Photos additionnelles">Photos additionnelles</a></li>
 </ul>
@@ -106,7 +108,7 @@ Cette amélioration permettra de mesurer avec précision la vitesse maximale du 
 <td style="text-align:center">16/02/18</td>
 </tr>
 <tr>
-<td>Elaboration du CDGF</td>
+<td>Elaboration du CdCF</td>
 <td style="text-align:center">17/01/18</td>
 <td style="text-align:center">22/01/18</td>
 </tr>
@@ -116,7 +118,7 @@ Cette amélioration permettra de mesurer avec précision la vitesse maximale du 
 <td style="text-align:center">14/02/18</td>
 </tr>
 <tr>
-<td>Vérifications du CDGF</td>
+<td>Vérifications du CdCF</td>
 <td style="text-align:center">14/02/18</td>
 <td style="text-align:center">12/04/18</td>
 </tr>
@@ -163,19 +165,54 @@ Mise en place d’une application pour communiquer vitesse instantanée, accél�
 Temps de recharge<br>
 Calculer la capacité maximale de la batterie avec les données constructeur. Effectuer une mesure de 0-100% avec un ampèremètre. Comparer cette valeur avec les données constructeur <em>(&lt; 3H)</em> et le modèle Matlab modélisant une batterie Lithium Ion</p>
 </blockquote>
+					
+						
+<h2><a id="Protocoles experimentaux_45"></a>Protocoles expérimentaux</h2>
+<hr>
+
+						<div class="col-6 col-12-small">
+							
+	<h3>Vitesse</h3>
+<ul>
+	<li><u>Vitesses annoncées</u><br/>
+Déterminer l’accélération. <br/>
+Déterminer vitesse maximale ((10 et 20 km/h) à vide et avec utilisateur). <br/>
+Analyse des écarts entre le skate réel, le modèle simulé et les caractéristiques du cahier des charges.<br/>
+Modélisation de la chaîne d’énergie du skate.
+</li>
+	<li><u>Communiquer</u> <br/>
+
+Affichage des vitesses (instantanée et moyenne).
+</li>
+		</ul>
+<h3>Autonomie</h3>
+	<ul>
+		<li><u>Temps de charge complet inférieur à trois heures</u> <br/>
+Calculer la capacité maximale de la batterie avec les données constructeur. <br/>
+Effectuer une mesure de 0-100% avec un ampèremètre.<br/>
+Comparer cette valeur avec les données constructeur (inférieu à trois heures) et le modèle Matlab modélisant une batterie Lithium-Ion.</li>
+		<li><u>Autonomie de  10 Km</u><br/>
+Compter le nombre de tours (dont la distance est connue), effectuer avec une charge complète de batterie. <br/>
+Utilisation d’un système GPS afin de vérifier la distance parcourue.<br/>
+Comparaisons avec un modèle théorique.
+</li>
+										
+											</ul>
+										
+										</div>
 <h2><a id="Mesures_82"></a>Mesures</h2>
 <hr>
 
 	
-									<h3>#Vitesses</h3>
+									<h3>Vitesse</h3>
 									<div class="table-wrapper">
 										<table class="alt">
 											<thead>
-												<h4> - Avec un utilisateur de 65kg</h4>
+												<h4> <em>- Avec un utilisateur de 65kg</em></h4>
 												<tr>
 													<th>Vitesse théorique (km/h)</th>
 													<th>Temps (s)</th>
-													<th>Distance (km)</th>
+													<th>Distance (m)</th>
 													<th>Vitesse expérimentale (km/h)</th>
 												</tr>
 											</thead>
@@ -183,37 +220,37 @@ Calculer la capacité maximale de la batterie avec les données constructeur. Ef
 												<tr>
 													<td>Low (10)</td>
 													<td>10.17</td>
-													<td>0.0145</td>
+													<td>14.50</td>
 													<td>5.13</td>
 												</tr>
 												<tr>
 													<td>High (20)</td>
 													<td>5.34</td>
-													<td>0.0145</td>
+													<td>14.50</td>
 													<td>9.78</td>
 												</tr>
 												<tr>
 													<td>Low (10)</td>
-													<td>1.5</td>
-													<td>0.0025</td>
+													<td>1.50</td>
+													<td>2.50</td>
 													<td>6.00</td>
 												</tr>
 												<tr>
 													<td>Low (10)</td>
 													<td>1.35</td>
-													<td>0.0025</td>
+													<td>2.50</td>
 													<td>6.67</td>
 												</tr>
 												<tr>
 													<td>High (20)</td>
-													<td>0.8</td>
-													<td>0.0025</td>
+													<td>0.80</td>
+													<td>2.50</td>
 													<td>11.25</td>
 												</tr>
 												<tr>
 													<td>High (20)</td>
-													<td>0.7</td>
-													<td>0.0025</td>
+													<td>0.70</td>
+													<td>2.50</td>
 													<td>12.86</td>
 												</tr>
 												
@@ -228,7 +265,7 @@ Calculer la capacité maximale de la batterie avec les données constructeur. Ef
 						<div class="table-wrapper">
 										<table class="alt">
 											<thead>
-												<h4> - Avec un banc de test</h4>
+												<h4> <em>- Avec un banc de test</em></h4>
 												<tr>
 													<th>Vitesse théorique (km/h)</th>
 													<th>Masse (Kg)</th>
@@ -239,32 +276,32 @@ Calculer la capacité maximale de la batterie avec les données constructeur. Ef
 												<tr>
 													<td>Low (10)</td>
 													<td>A vide</td>
-													<td>721</td>
+													<td>721.00</td>
 												</tr>
 												<tr>
 													<td>High (20)</td>
 													<td>A vide</td>
-													<td>1611</td>
+													<td>1611.00</td>
 												</tr>
 												<tr>
 													<td>Low (10)</td>
 													<td>5.00</td>
-													<td>620</td>
+													<td>620.00</td>
 												</tr>
 												<tr>
 													<td>High (20)</td>
 													<td>5.00</td>
-													<td>1460</td>
+													<td>1460.00</td>
 												</tr>
 												<tr>
 													<td>Low (10)</td>
 													<td>10.00</td>
-													<td>610</td>
+													<td>610.00</td>
 												</tr>
 												<tr>
 													<td>High (20)</td>
 													<td>10.00</td>
-													<td>1445</td>
+													<td>1445.00</td>
 												</tr>
 												
 											</tbody>
@@ -273,8 +310,10 @@ Calculer la capacité maximale de la batterie avec les données constructeur. Ef
 											</tfoot>
 										</table>
 									</div>
-						
-						
+						<br/><h3>Autonomie</h3>
+						<blockquote>
+<p>A paraître.</p>
+</blockquote>
 						<h2><a id="Photos additionnelles"></a>Photos additionnelles</h2>
 <hr>
 <p align="center"><img src="images/binder/cartedecommande.jpg" alt="cartedecommande" style="max-width:100%;max-height:100%;"></p>
