@@ -54,19 +54,20 @@
 						
 <h2><a id="Presentation_du_projet_16"></a>Présentation du projet</h2>
 <hr>
-<p>Le projet étudié est un skate électrique, de la marque MOOVWAY, référence S1.<br>
+<p>Le projet étudié est un skate électrique, de la marque MOOVWAY, référence S1.<br><br>
 Quelques caractéristiques techniques :</p>
 <blockquote>
-<p>Type de batterie (lithium) : 25.2V (nominal); 29.4V (max);  2.2 A;  Pélec 55.44Wh<br>
+	<p>Type de batterie (lithium) : 25.2V (nominal); 29.4V (max);  2.2 A;  Pélec 55.44Wh<br>
 Temps de charge batterie : 1h30<br>
 Nombre de cycles batterie : 500<br>
-Type de roues : 73mm (diamètre) 2.9 pouces<br>
+Type de roues : 73mm (diamètre) ou 2.9 pouces<br>
 Puissance du moteur : 350W<br>
 Moteur synchrone à aimants permanents<br>
 Masse net : 3.9kg<br>
 Vitesse maximale : 20km/h<br>
+Autonomie : 10 km <br/>
 Masse maximale acceptée : 60 kg<br>
-Temps de charge télécommande: 2 h<br>
+Temps de charge télécommande : 2 h<br>
 Fréquence télécommande : 2.4 GHz<br>
 Distance d’éloignement max (télécommande/skate) : 14m</p>
 </blockquote>
@@ -124,7 +125,7 @@ Cette amélioration permettra de mesurer avec précision la vitesse maximale du 
 </tr>
 </tbody>
 </table>
-<p align="center"><img src="images/binder/gant.png" alt="gant" style="max-width:100%;max-height:100%;"></p>
+<p align="center"><img src="images/binder/gantt.png" alt="gantt" style="max-width:100%;max-height:100%;"></p>
 <blockquote>
 <p><strong>Valentin</strong> : Communiquer des informations à l’utilisateur (matlab + ajouts)<br>
 <strong>Thibaud</strong> : Disposer d’une autonomie suffisante par rapport à l’usage<br>
@@ -132,16 +133,16 @@ Cette amélioration permettra de mesurer avec précision la vitesse maximale du 
 </blockquote>
 <h2><a id="Analyse_du_besoin_49"></a>Analyse du besoin</h2>
 <hr>
-<p align="center"><img src="images/binder/horned.png" alt="gant" style="max-width:100%;max-height:100%;"></p>
+<p align="center"><img src="images/binder/horned.png" alt="Analyse du besoin" style="max-width:100%;max-height:100%;"></p>
 <h2><a id="Analyse_des_interactions_entre_le_systeme_et_son_environnement_53"></a>Analyse des interactions entre le système et son environnement</h2>
 <hr>
-<p align="center"><img src="images/binder/octopus.png" alt="gant" style="max-width:100%;max-height:100%;"></p>
+<p align="center"><img src="images/binder/octopus.png" alt="Analyse des interactions entre le système et son environnement" style="max-width:100%;max-height:100%;"></p>
 <h2><a id="Analyse_structurelle_57"></a>Analyse structurelle</h2>
 <hr>
-<p align="center"><img src="images/binder/structured.png" alt="gant" style="max-width:100%;max-height:100%;"></p>
+<p align="center"><img src="images/binder/structured.png" alt="Analyse structurelle" style="max-width:100%;max-height:100%;"></p>
 <h2><a id="Diagramme_FAST_61"></a>Diagramme FAST</h2>
 <hr>
-<p align="center"><img src="images/binder/fast.png" alt="gant" style="max-width:100%;max-height:100%;"></p>
+<p align="center"><img src="images/binder/fast.png" alt="Diagramme FAST" style="max-width:100%;max-height:100%;"></p>
 <h2><a id="Modelisation_65"></a>Modélisation</h2>
 <hr>
 <blockquote>
@@ -157,24 +158,24 @@ Cette amélioration permettra de mesurer avec précision la vitesse maximale du 
 							
 	<h3>Vitesse</h3>
 <ul>
-	<li><u>Vitesses annoncées</u><br/>
+	<li><u>Vitesses annoncées</u> :<br/>
 Déterminer l’accélération. <br/>
 Déterminer vitesse maximale ((10 et 20 km/h) à vide et avec utilisateur). <br/>
 Analyse des écarts entre le skate réel, le modèle simulé et les caractéristiques du cahier des charges.<br/>
 Modélisation de la chaîne d’énergie du skate.
 </li>
-	<li><u>Communiquer</u> <br/>
+	<li><u>Communiquer</u> :<br/>
 
 Affichage des vitesses (instantanée et moyenne).
 </li>
 		</ul>
 <h3>Autonomie</h3>
 	<ul>
-		<li><u>Temps de charge complet inférieur à trois heures</u> <br/>
+		<li><u>Temps de charge complet inférieur à trois heures</u> :<br/>
 Calculer la capacité maximale de la batterie avec les données constructeur. <br/>
 Effectuer une mesure de 0-100% avec un ampèremètre.<br/>
 Comparer cette valeur avec les données constructeur (inférieu à trois heures) et le modèle Matlab modélisant une batterie Lithium-Ion.</li>
-		<li><u>Autonomie de  10 Km</u><br/>
+		<li><u>Autonomie de  10 Km</u> :<br/>
 Compter le nombre de tours (dont la distance est connue), effectuer avec une charge complète de batterie. <br/>
 Utilisation d’un système GPS afin de vérifier la distance parcourue.<br/>
 Comparaisons avec un modèle théorique.
@@ -303,7 +304,7 @@ Comparaisons avec un modèle théorique.
 						
 <p align="center"><img src="images/binder/cartedecommande.jpg" alt="cartedecommande" style="max-width:100%;max-height:100%;"></p>
 <p align="center"><img src="images/binder/batterie.jpg" alt="batterie" style="max-width:100%;max-height:100%;"></p>
-<p align="center"><img src="images/binder/telecommande.jpg" alt="batterie" style="max-width:100%;max-height:100%;"></p>						
+<p align="center"><img src="images/binder/telecommande.jpg" alt="télécommande" style="max-width:100%;max-height:100%;"></p>						
 					</div>
 				</div>
 			</section>
@@ -312,7 +313,7 @@ Comparaisons avec un modèle théorique.
 				<div class="inner">
 					<div class="content">
 						<section>
-							<h3>Projet du Skate Électrique MoovWay</h3>
+							<h3>Projet du Skate Électrique MoovWay S1</h3>
 							<p>Projet interdisciplinaire en Sciences de l'Ingénieur mené par Thomas, Thibaud, Marin &amp; Valentin en classe de TS1 sur l'année 2017-2018 au lycée Jules Ferry de Versailles (78).<br/>Nous allons étudier dans ce projet un skate électrique de la marque MoovWay pour tenter de répondre aux principales contraintes techniques du système.</p>
 						</section>
 						<section>
@@ -333,7 +334,7 @@ Comparaisons avec un modèle théorique.
 						</section>
 					</div>
 					<div class="copyright">
-						&copy;2018 Burgaud Valentin &amp; Romain Thomas
+						&copy;2018 Burgaud Valentin &amp; Romain Thomas. Tous droits réservés.
 					</div>
 				</div>
 			</footer>
